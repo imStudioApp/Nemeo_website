@@ -17,7 +17,7 @@ function Logo() {
 
 function AppStoreButton({ light = false, priority = false }: { light?: boolean; priority?: boolean }) {
   return (
-    <a className={`store-button${light ? " light" : ""}`} href="#download" aria-label="Download Nemeo on the App Store">
+    <a className={`store-button${light ? " light" : ""}`} href="https://apps.apple.com/app/id6813036038" aria-label="Download Nemeo on the App Store">
       <Image className="apple-logo" src={`${ASSET_ROOT}/apple-logo.svg`} alt="" width={27} height={31} priority={priority} />
       <span><small>Download on the</small><strong>App Store</strong></span>
     </a>
@@ -42,8 +42,8 @@ function PhoneMockup() {
         </div>
         <Image className="phone-frame" src={`${ASSET_ROOT}/iphone-15-pro-figma-layer.png`} alt="" fill sizes="345px" unoptimized priority aria-hidden="true" />
       </div>
-      <div className="saving-pill saving-before"><small>Original</small><strong>11.8 GB</strong><span>before compression</span></div>
-      <div className="saving-pill saving-after"><small>Optimized</small><strong>1.2 GB</strong><span>10.6 GB saved</span></div>
+      <div className="saving-pill saving-before"><small>Example · Original</small><strong>11.8 GB</strong><span>before compression</span></div>
+      <div className="saving-pill saving-after"><small>Example · Optimized</small><strong>1.2 GB</strong><span>10.6 GB saved</span></div>
     </figure>
   );
 }
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow"><span>✦</span> Made for iPhone</div>
           <h1>Compress videos.<br /><em>Not memories.</em></h1>
-          <p>Nemeo gives your iPhone room to breathe — optimizing heavy videos and photos without sending a single memory to the cloud.</p>
+          <p>Nemeo gives your iPhone room to breathe — optimizing heavy videos and photos without uploading your media to Nemeo servers.</p>
           <div className="hero-actions">
             <AppStoreButton priority />
             <a className="text-link" href="#features">See how it works <span>↓</span></a>
@@ -96,7 +96,7 @@ export default function Home() {
       <section className="download shell" id="download">
         <div className="download-glow" aria-hidden="true" />
         <Image className="download-mark" src={`${ASSET_ROOT}/app-icon.png`} alt="Nemeo app icon" width={78} height={78} />
-        <div className="download-copy"><span className="card-number">COMING TO IPHONE</span><h2>More room for<br />what comes next.</h2><p>Compress videos, not memories — with the same calm, clear flow shown above.</p></div>
+        <div className="download-copy"><span className="card-number">MADE FOR IPHONE</span><h2>More room for<br />what comes next.</h2><p>Compress videos, not memories — with the same calm, clear flow shown above.</p></div>
         <AppStoreButton light />
       </section>
 
